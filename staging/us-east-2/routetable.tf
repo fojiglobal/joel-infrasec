@@ -6,7 +6,7 @@ resource "aws_route_table" "staging_pub_rtr" {
     gateway_id = aws_internet_gateway.staging_igw.id
   }
 
-   tags = {
+  tags = {
     Name = "staging-pub-rtr"
   }
 }
@@ -30,7 +30,7 @@ resource "aws_route_table" "staging_pri_rtr" {
     gateway_id = aws_nat_gateway.staging_natgw.id
   }
 
-   tags = {
+  tags = {
     Name = "staging-pri-rtr"
   }
 }
